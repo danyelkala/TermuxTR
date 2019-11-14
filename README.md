@@ -10,7 +10,7 @@
 * keyiflerolsun'un derlemiş olduğu bu araç,  ekli paketlerin hatasız bir şekilde kurulmasını sağlamaktadır. (İlk kurulumda bile.) 
 
 <p align="center">
-<img height="50px" width="50px" src="https://i.hizliresim.com/dLdB1L.jpg"/>
+<img src="https://i.hizliresim.com/dLdB1L.jpg"/>
 </p>
 
 ### :inbox_tray: &nbsp; Nasıl Kurulur? &nbsp; :inbox_tray:
