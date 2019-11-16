@@ -27,7 +27,7 @@ Termux uygulamanızı açın ve aşağıdaki kodları uygulayın;
 
 * `chmod +x basla.sh`
 
-* `bash basla.sh` veye `./basla.sh`
+* `bash basla.sh` veya `./basla.sh`
 
 ### :fire: &nbsp; Nasıl Kullanılır? &nbsp; :fire:
 
