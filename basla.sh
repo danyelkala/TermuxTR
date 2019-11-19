@@ -17,7 +17,7 @@ printf "\e[1;92m  |_|\___|_|  |_| |_| |_|\__,_/_/\_\ \e[0m\e[1;77m |_| |_| \_\ \
   
 
 
-printf " \e[1;77m v4.1 coded by github.com/keyiflerolsun/TermuxTR\e[0m \n"
+printf " \e[1;77m v4.2 coded by github.com/keyiflerolsun/TermuxTR\e[0m \n"
 
 printf "\n"
 
@@ -34,6 +34,8 @@ echo -e '
 \e[1;92m[\e[0m\e[1;77m04\e[0m\e[1;92m]\e[0m\e[1;93m HakkuFramework		\e[1;92m[\e[0m\e[1;77m10\e[0m\e[1;92m]\e[0m\e[1;93m TermuxStyling
 \e[1;92m[\e[0m\e[1;77m05\e[0m\e[1;92m]\e[0m\e[1;93m OpenSourceInfoFacebook	\e[1;92m[\e[0m\e[1;77m11\e[0m\e[1;92m]\e[0m\e[1;93m Termux-Style
 \e[1;92m[\e[0m\e[1;77m06\e[0m\e[1;92m]\e[0m\e[1;93m A-Rat			\e[1;92m[\e[0m\e[1;77m12\e[0m\e[1;92m]\e[0m\e[1;93m Termux-Ubuntu
+
+		\e[1;92m[\e[0m\e[1;77m13\e[0m\e[1;92m]\e[0m\e[1;93m Rat Oluşturucu (Metasploit)
 \e[1;31m
 '
 
@@ -315,6 +317,13 @@ elif [[ $islem == 12 ]]; then
 	echo -e '\033[31;40;1m              Kurulum Bitti!'
 	sleep 5
 	bash $HOME/TermuxTR/basla.sh
+
+#menu 13
+elif [[ $islem == 13 ]]; then
+	clear
+	banner
+	sleep 2 
+	bash $HOME/TermuxTR/RAT-YAP.sh
 
 else
         echo -e '\033[36;40;1m Girdiğniz İşlem Numarasını Kontrol Ediniz....
