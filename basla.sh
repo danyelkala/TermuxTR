@@ -35,9 +35,8 @@ echo -e '
 \e[1;92m[\e[0m\e[1;77m05\e[0m\e[1;92m]\e[0m\e[1;93m OpenSourceInfoFacebook	\e[1;92m[\e[0m\e[1;77m11\e[0m\e[1;92m]\e[0m\e[1;93m Termux-Style
 \e[1;92m[\e[0m\e[1;77m06\e[0m\e[1;92m]\e[0m\e[1;93m A-Rat			\e[1;92m[\e[0m\e[1;77m12\e[0m\e[1;92m]\e[0m\e[1;93m Termux-Ubuntu
 
-		\e[1;92m[\e[0m\e[1;77m13\e[0m\e[1;92m]\e[0m\e[1;93m Rat Oluşturucu (Metasploit)
-\e[1;31m
-'
+	\e[1;92m[\e[0m\e[1;77m13\e[0m\e[1;92m]\e[0m\e[1;93m Rat Oluşturucu (Metasploit)
+\e[1;31m'
 
 read -p ' İşlem Numarası: ' islem
 
@@ -320,9 +319,6 @@ elif [[ $islem == 12 ]]; then
 
 #menu 13
 elif [[ $islem == 13 ]]; then
-	clear
-	banner
-	sleep 2 
 	bash $HOME/TermuxTR/RAT-YAP.sh
 
 else
