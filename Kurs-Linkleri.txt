@@ -1,5 +1,7 @@
 1 - Kali Linux ile Sıfırdan Temel Linux Eğitimi : http://bc.vc/PjLyifE
 
+1bir - Bash Script Temel Eğitimi : http://bc.vc/t1uOv8l
+
 2 - Siber Güvenlik - Gökhan Muharremoğlu ile Etik Hacking ve Savunma : http://bc.vc/9kpKuqr
 
 3 - un5t48l3.com : http://bc.vc/mEl0CLt
