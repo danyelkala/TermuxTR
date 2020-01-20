@@ -34,7 +34,8 @@ echo -e '
 \e[1;92m[\e[0m\e[1;77m05\e[0m\e[1;92m]\e[0m\e[1;93m OpenSourceInfoFacebook	\e[1;92m[\e[0m\e[1;77m11\e[0m\e[1;92m]\e[0m\e[1;93m Termux-Style
 \e[1;92m[\e[0m\e[1;77m06\e[0m\e[1;92m]\e[0m\e[1;93m A-Rat			\e[1;92m[\e[0m\e[1;77m12\e[0m\e[1;92m]\e[0m\e[1;93m Termux-ExtraKeys
 
-	\e[1;92m[\e[0m\e[1;77m13\e[0m\e[1;92m]\e[0m\e[1;93m Rat Oluşturucu (Metasploit)
+	\e[1;92m[\e[0m\e[1;77m13\e[0m\e[1;92m]\e[0m\e[1;93m BruteDum
+	\e[1;92m[\e[0m\e[1;77m14\e[0m\e[1;92m]\e[0m\e[1;93m Rat Oluşturucu (Metasploit)
 \e[1;31m'
 
 read -p ' İşlem Numarası: ' islem
@@ -282,7 +283,22 @@ elif [[ $islem == 12 ]]; then
 
 #menu 13
 elif [[ $islem == 13 ]]; then
-	bash $HOME/TermuxTR/RAT-YAP.sh
+	clear
+        banner
+        sleep 2
+        cd $HOME
+	git clone https://github.com/GitHackTools/BruteDum.git
+	cd $HOME/BruteDum
+	chmod +x brutedum.py
+	wget https://raw.githubusercontent.com/berzerk0/Probable-Wordlists/master/Real-Passwords/Top207-probable-v2.txt
+        sleep 2
+        echo -e '\033[31;40;1m              Kurulum Bitti!'
+        sleep 5
+        bash $HOME/TermuxTR/basla.sh
+
+#menu 14
+elif [[ $islem == 14 ]]; then
+        bash $HOME/TermuxTR/RAT-YAP.sh
 
 else
         echo -e '\033[36;40;1m Girdiğniz İşlem Numarasını Kontrol Ediniz....
