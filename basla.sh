@@ -14,7 +14,6 @@ printf "\e[1;92m|_   _|__ _ __ _ __ ___  _   ___  _\e[0m\e[1;77m |_   _|  _ \ \e
 printf "\e[1;92m  | |/ _ \ '__| '_ ' _ \| | | \ \/ / \e[0m\e[1;77m | | | |_) |\e[0m\n"
 printf "\e[1;92m  | |  __/ |  | | | | | | |_| |>  <  \e[0m\e[1;77m | | |  _ <\e[0m\n"
 printf "\e[1;92m  |_|\___|_|  |_| |_| |_|\__,_/_/\_\ \e[0m\e[1;77m |_| |_| \_\ \e[0m\n"
-  
 
 
 printf " \e[1;77m v4.2 coded by github.com/keyiflerolsun/TermuxTR\e[0m \n"
@@ -29,11 +28,11 @@ banner
 echo -e '
 		\e[1;92m[\e[0m\e[1;77m00\e[0m\e[1;92m]\e[0m\e[1;93m Termux Yazma İzni
 \e[1;92m[\e[0m\e[1;77m01\e[0m\e[1;92m]\e[0m\e[1;93m Genel Kurulumlar(~0.65GB)	\e[1;92m[\e[0m\e[1;77m07\e[0m\e[1;92m]\e[0m\e[1;93m NGrok
-\e[1;92m[\e[0m\e[1;77m02\e[0m\e[1;92m]\e[0m\e[1;93m Metasploit(~0.62GB)	\e[1;92m[\e[0m\e[1;77m08\e[0m\e[1;92m]\e[0m\e[1;93m ShellPhish				
-\e[1;92m[\e[0m\e[1;77m03\e[0m\e[1;92m]\e[0m\e[1;93m Routersploit(~0.28GB)	\e[1;92m[\e[0m\e[1;77m09\e[0m\e[1;92m]\e[0m\e[1;93m SayCheese
-\e[1;92m[\e[0m\e[1;77m04\e[0m\e[1;92m]\e[0m\e[1;93m HakkuFramework		\e[1;92m[\e[0m\e[1;77m10\e[0m\e[1;92m]\e[0m\e[1;93m TermuxStyling
+\e[1;92m[\e[0m\e[1;77m02\e[0m\e[1;92m]\e[0m\e[1;93m Metasploit(~0.62GB)	\e[1;92m[\e[0m\e[1;77m08\e[0m\e[1;92m]\e[0m\e[1;93m ShellPhish
+\e[1;92m[\e[0m\e[1;77m03\e[0m\e[1;92m]\e[0m\e[1;93m One-Lin3r			\e[1;92m[\e[0m\e[1;77m09\e[0m\e[1;92m]\e[0m\e[1;93m SayCheese
+\e[1;92m[\e[0m\e[1;77m04\e[0m\e[1;92m]\e[0m\e[1;93m HakkuFramework		\e[1;92m[\e[0m\e[1;77m10\e[0m\e[1;92m]\e[0m\e[1;93m Termux-OhMyZSH
 \e[1;92m[\e[0m\e[1;77m05\e[0m\e[1;92m]\e[0m\e[1;93m OpenSourceInfoFacebook	\e[1;92m[\e[0m\e[1;77m11\e[0m\e[1;92m]\e[0m\e[1;93m Termux-Style
-\e[1;92m[\e[0m\e[1;77m06\e[0m\e[1;92m]\e[0m\e[1;93m A-Rat			\e[1;92m[\e[0m\e[1;77m12\e[0m\e[1;92m]\e[0m\e[1;93m Termux-Ubuntu
+\e[1;92m[\e[0m\e[1;77m06\e[0m\e[1;92m]\e[0m\e[1;93m A-Rat			\e[1;92m[\e[0m\e[1;77m12\e[0m\e[1;92m]\e[0m\e[1;93m Termux-ExtraKeys
 
 	\e[1;92m[\e[0m\e[1;77m13\e[0m\e[1;92m]\e[0m\e[1;93m Rat Oluşturucu (Metasploit)
 \e[1;31m'
@@ -58,13 +57,13 @@ elif [[ $islem == 1 || $islem == 01 ]]; then
 	apt-get update -y                      #update in progress
 	apt install python -y           #installation......
 	apt install python2 -y
-	apt install ruby -y 
+	apt install ruby -y
 	apt install git -y
 	apt install screenfetch -y
 	apt install cowsay -y
 	apt install toilet -y
 	apt install figlet -y
-	apt install php -y 
+	apt install php -y
 	apt install perl -y
 	apt install nmap -y
 	pkg install openssh -y
@@ -78,13 +77,13 @@ elif [[ $islem == 1 || $islem == 01 ]]; then
 	apt install zip -y
 	apt install fish -y
 	apt install unzip -y
-	apt install tor -y 
+	apt install tor -y
 	apt install sudo -y
 	apt install wget -y
 	apt install tor -y
 	apt install w3m -y
 	apt install cmatrix -y
-	apt install wcalc -y 
+	apt install wcalc -y
 	apt install openssl
 	apt install bmon -y
 	pkg install unstable-repo -y
@@ -142,32 +141,9 @@ elif [[ $islem == 3 || $islem == 03 ]]; then
 	pkg install perl -y
 	pkg install python -y
 	pkg install python2 -y
-	pip install --upgrade pip 
-	cd $HOME
-	git clone https://github.com/threat9/routersploit
-	sleep 5
-	cd $HOME/routersploit/
-	chmod +x *
-	pkg install clang -y
-	apt install libffi libffi-dev -y
-	pkg install python-dev -y clang libcrypt-dev -y libffi-dev -y git openssl-dev -y && export CONFIG_SHELL=$PREFIX/bin/sh
-	pkg upgrade && pkg install autoconf -y automake -y bison -y bzip2 -y clang -y cmake -y \ coreutils -y diffutils -y flex -y gawk -y git -y grep -y gzip -y libtool -y make -y patch -y perl -y \ sed -y 
-	tar -y wget -y pkg-config -y silversearcher-ag -y
-	pip install future
-	termux-fix-shebang rsf.py
-	pip install cryptography
-	pip install requests
-	pip install paramiko
-	pip install pysnmp
-	pip install pycrypto
-	pip install pycryptodome
-	pip install pysnmp==4.4.6
-	pip install pytest==3.6.0
-	pip install pytest-forked
-	pip install pytest-xdist
-	pip install flake8
-	pip install -r requirements.txt
-	pip install -r requirements-dev.txt
+	pip install --upgrade pip
+	python3 -m pip install --upgrade pip
+	pip3 install one-lin3r
 	echo -e '\033[31;40;1m              Kurulum Bitti!'
 	sleep 5
 	bash $HOME/TermuxTR/basla.sh
@@ -270,17 +246,14 @@ elif [[ $islem == 10 ]]; then
 	banner
 	sleep 2
 	cd $HOME
-	git clone https://github.com/darkwarrior3/termuxstyling.git
-	sleep 5
-	cd $HOME/termuxstyling/
-	chmod +x *
-	bash setup.sh
+	pkg install -y libcurl curl
+	sh -c "$(curl -fsSL https://github.com/Cabbagec/termux-ohmyzsh/raw/master/install.sh)"
 	sleep 1
 	TermuxTR
 	echo -e '\033[31;40;1m              Kurulum Bitti!'
 	sleep 5
 	bash $HOME/TermuxTR/basla.sh
-	
+
 #menu 11
 elif [[ $islem == 11 ]]; then
 	clear
@@ -300,18 +273,8 @@ elif [[ $islem == 11 ]]; then
 elif [[ $islem == 12 ]]; then
 	clear
 	banner
-	sleep 2 
-	apt update
-	apt upgrade -y
-	pkg install proot -y
-	cd $HOME
-	git clone https://github.com/Neo-Oli/termux-ubuntu
-	sleep 5
-	cd termux-ubuntu
-	chmod +x *
-	bash ubuntu.sh
 	sleep 2
-	mv -v start-ubuntu.sh /data/data/com.termux/files/usr/bin
+	mkdir $HOME/.termux/ ;echo "extra-keys = [['ESC','/','-','HOME','UP','END','PGUP'],['TAB','CTRL','ALT','LEFT','DOWN','RIGHT','PGDN']]" >> $HOME/.termux/termux.properties; termux-reload-properties;
 	sleep 2
 	echo -e '\033[31;40;1m              Kurulum Bitti!'
 	sleep 5
@@ -323,9 +286,9 @@ elif [[ $islem == 13 ]]; then
 
 else
         echo -e '\033[36;40;1m Girdiğniz İşlem Numarasını Kontrol Ediniz....
-  5 Saniye içinde ana menüye yönlendirileceksiniz.. '	
+  5 Saniye içinde ana menüye yönlendirileceksiniz.. '
 	sleep 5
-	clear 
+	clear
 	bash basla.sh
-	
+
 fi
